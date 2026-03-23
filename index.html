@@ -1,41 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>My Record Collection</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-    <h1>🎵 My Record Collection</h1>
-
-    <!-- SEARCH -->
-    <input type="text" id="search" placeholder="Search by artist or album...">
-if (!localStorage.getItem("user")) {
-    window.location.href = "login.html";
-}
-    <!-- ADD RECORD FORM -->
-    <h2>Add New Record</h2>
-    <form id="record-form">
-        <input type="text" id="artist" placeholder="Artist" required>
-        <input type="text" id="album" placeholder="Album" required>
-        <input type="number" id="year" placeholder="Year" required>
-        <input type="text" id="image" placeholder="Image URL">
-        <button type="submit">Add Record</button>
-    </form>
-
-    <div id="record-list"></div>
-    <div id="profile-box"></div>
-    <h2>❤️ Your Friends</h2>
-<div id="friends"></div>
-
-<a href="profile.html">⚙️ Profile Settings</a>
-
-    <script src="script.js"></script>
-
-
-<button onclick="showFavorites()">Show Favorites</button>
-<button onclick="displayRecords(records)">Show All</button>
+<h1>🎵 My Record Collection</h1>
 <img src="images/vinyl_banner.png" alt="Vinyl Banner" width="400">
-</body>
-</html>
+
+<input type="text" id="search" placeholder="Search by artist or album...">
+
+<h2>Add New Record</h2>
+<form id="record-form">
+    <input type="text" id="artist" placeholder="Artist" required>
+    <input type="text" id="album" placeholder="Album" required>
+    <input type="number" id="year" placeholder="Year" required>
+    <input type="text" id="image" placeholder="Image URL">
+    <button type="submit">Add Record</button>
+</form>
+
+<div id="record-list"></div>
