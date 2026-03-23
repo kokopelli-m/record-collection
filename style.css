@@ -22,3 +22,14 @@ body {
 .record img {
     width: 100%;
 }
+input, button {
+    margin: 5px;
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+}
+
+#search {
+    width: 60%;
+    margin-bottom: 20px;
+}
