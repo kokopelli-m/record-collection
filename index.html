@@ -9,6 +9,19 @@
 
     <h1>🎵 My Record Collection</h1>
 
+    <!-- SEARCH -->
+    <input type="text" id="search" placeholder="Search by artist or album...">
+
+    <!-- ADD RECORD FORM -->
+    <h2>Add New Record</h2>
+    <form id="record-form">
+        <input type="text" id="artist" placeholder="Artist" required>
+        <input type="text" id="album" placeholder="Album" required>
+        <input type="number" id="year" placeholder="Year" required>
+        <input type="text" id="image" placeholder="Image URL">
+        <button type="submit">Add Record</button>
+    </form>
+
     <div id="record-list"></div>
 
     <script src="script.js"></script>
