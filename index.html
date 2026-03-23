@@ -1,9 +1,11 @@
 <h1>🎵 My Record Collection</h1>
 <img src="images/vinyl_banner.png" alt="Vinyl Banner" width="400">
-// Eğer login yapılmamışsa login sayfasına yönlendir
-if (!localStorage.getItem("user")) {
+<script src="script.js">
+    if (!localStorage.getItem("user")) {
     window.location.href = "login.html";
 }
+</script>
+
 <input type="text" id="search" placeholder="Search by artist or album...">
 
 <h2>Add New Record</h2>
