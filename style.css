@@ -1,52 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
 body {
-    font-family: Arial, sans-serif;
-    background: #111;
-    color: white;
+    font-family: 'Press Start 2P', cursive;
+    background: linear-gradient(180deg, #2c1a0b, #3e2c18);
+    color: #fff8e7;
+    margin: 0;
+    padding: 0;
     text-align: center;
+}
+
+h1, h2 {
+    color: #ffcc66;
+    text-shadow: 2px 2px #663300;
+}
+
+#profile-box {
+    margin: 20px 0;
 }
 
 #record-list {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    gap: 20px;
+    padding: 20px;
 }
 
 .record {
-    border: 1px solid #444;
-    margin: 10px;
-    padding: 10px;
-    width: 200px;
-    background: #222;
+    border: 3px solid #ffcc66;
+    border-radius: 12px;
+    background: #3e2c18;
+    width: 220px;
+    padding: 15px;
+    box-shadow: 5px 5px 15px #111;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.record:hover {
+    transform: translateY(-5px);
+    box-shadow: 10px 10px 25px #000;
 }
 
 .record img {
     width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 8px #000;
 }
-input, button {
-    margin: 5px;
-    padding: 8px;
-    border-radius: 5px;
+
+input, button, select {
+    margin: 8px;
+    padding: 10px;
+    border-radius: 8px;
     border: none;
+    font-family: 'Press Start 2P', cursive;
+}
+
+input {
+    width: 80%;
+    max-width: 300px;
+}
+
+button {
+    background: #ffcc66;
+    color: #3e2c18;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background: #e6b844;
 }
 
 #search {
     width: 60%;
+    max-width: 400px;
     margin-bottom: 20px;
 }
-#profile-box {
-    margin-bottom: 20px;
+
+#friends, #suggestions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
 }
-@media (max-width: 600px) {
-    #record-list {
-        flex-direction: column;
-        align-items: center;
-    }
 
-    .record {
-        width: 90%;
-    }
-
-    input {
-        width: 90%;
-    }
+#friends div, #suggestions div {
+    background: #2c1a0b;
+    border: 2px solid #ffcc66;
+    padding: 8px 12px;
+    border-radius: 10px;
 }
