@@ -1,0 +1,14 @@
+[
+  {
+    "artist": "Pink Floyd",
+    "album": "The Dark Side of the Moon",
+    "year": 1973,
+    "image": "images/darkside.jpg"
+  },
+  {
+    "artist": "Metallica",
+    "album": "Master of Puppets",
+    "year": 1986,
+    "image": "images/master.jpg"
+  }
+]
