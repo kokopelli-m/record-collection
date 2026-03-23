@@ -25,6 +25,24 @@ fetch("data/records.json")
         records = data;
         displayRecords(records);
     });
+function loadProfile() {
+    const profile = JSON.parse(localStorage.getItem("profile"));
+    const box = document.getElementById("profile-box");
+
+    if (profile) {
+        box.innerHTML = `
+            <img src="${profile.avatar}" width="50" style="border-radius:50%">
+            <p>${profile.username}</p>
+        `;
+
+        if (profile.theme === "light") {
+            document.body.style.background = "#fff";
+            document.body.style.color = "#000";
+        }
+    }
+}
+
+loadProfile();
 
 function displayRecords(data) {
     const list = document.getElementById("record-list");
