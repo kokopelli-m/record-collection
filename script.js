@@ -137,4 +137,9 @@ function deleteRecord(index) {
     saveFavorites();
 
     displayRecords(records);
-}
+}btn.addEventListener("click", () => {
+    const username = document.getElementById("username").value.trim();
+    if (username === "") return alert("Enter a name!");
+    localStorage.setItem("user", username);
+    window.location.href = "index.html";
+});
