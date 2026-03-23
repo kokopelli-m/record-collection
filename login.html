@@ -2,22 +2,42 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Login</title>
+    <title>Login - Oldies but Goldies</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<h1>Login</h1>
+    <h1>🎵 Oldies but Goldies</h1>
+    <img src="images/vinyl_banner.png" alt="Vinyl Banner" width="400">
 
-<input type="text" id="username" placeholder="Username">
-<button onclick="login()">Login</button>
+    <div id="login-box">
+        <h2>Login</h2>
+        <input type="text" id="username" placeholder="Enter your name" required>
+        <button id="login-btn">Login</button>
+    </div>
 
-<script>
-function login() {
-    const user = document.getElementById("username").value;
-    localStorage.setItem("user", user);
-    window.location.href = "index.html";
-}
-</script>
+    <script>
+        const btn = document.getElementById("login-btn");
+
+        btn.addEventListener("click", () => {
+            const username = document.getElementById("username").value.trim();
+
+            if (username === "") {
+                alert("Please enter your name!");
+                return;
+            }
+
+            // LocalStorage’a kaydet
+            localStorage.setItem("user", username);
+
+            // Arkadaş listesi ve favoriler boş olarak başlar
+            if (!localStorage.getItem("friends")) localStorage.setItem("friends", JSON.stringify([]));
+            if (!localStorage.getItem("favorites")) localStorage.setItem("favorites", JSON.stringify([]));
+
+            // Ana sayfaya yönlendir
+            window.location.href = "index.html";
+        });
+    </script>
 
 </body>
 </html>
