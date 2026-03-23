@@ -92,3 +92,29 @@ button:hover {
     padding: 8px 12px;
     border-radius: 10px;
 }
+#login-box {
+    background: #3e2c18;
+    border: 3px solid #ffcc66;
+    border-radius: 12px;
+    padding: 20px;
+    width: 300px;
+    margin: 40px auto;
+    box-shadow: 5px 5px 15px #111;
+}
+
+#login-box input {
+    width: 80%;
+    margin-bottom: 10px;
+}
+
+#login-box button {
+    width: 50%;
+    background: #ffcc66;
+    color: #3e2c18;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#login-box button:hover {
+    background: #e6b844;
+}
