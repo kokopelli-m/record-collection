@@ -11,7 +11,9 @@
 
     <!-- SEARCH -->
     <input type="text" id="search" placeholder="Search by artist or album...">
-
+if (!localStorage.getItem("user")) {
+    window.location.href = "login.html";
+}
     <!-- ADD RECORD FORM -->
     <h2>Add New Record</h2>
     <form id="record-form">
