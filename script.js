@@ -26,6 +26,13 @@ function showFavorites() {
     const favRecords = records.filter((_, i) => favorites.includes(i));
     displayRecords(favRecords);
 }
+let users = [];
+let currentUser = localStorage.getItem("user");
+let friends = JSON.parse(localStorage.getItem("friends")) || [];
+
+fetch("data/users.json")
+    .then(res => res.json())
+    .then(data => users = data);
 function displayRecords(data) {
     const list = document.getElementById("record-list");
     list.innerHTML = "";
