@@ -36,3 +36,17 @@ input, button {
 #profile-box {
     margin-bottom: 20px;
 }
+@media (max-width: 600px) {
+    #record-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .record {
+        width: 90%;
+    }
+
+    input {
+        width: 90%;
+    }
+}
