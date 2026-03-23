@@ -40,6 +40,18 @@ function getMatches() {
         })
         .sort((a, b) => b.score - a.score);
 }
+function showFriends() {
+    const container = document.getElementById("friends");
+    container.innerHTML = "";
+
+    friends.forEach(f => {
+        const div = document.createElement("div");
+        div.innerHTML = `<p>${f}</p>`;
+        container.appendChild(div);
+    });
+}
+
+showFriends();
 let users = [];
 let currentUser = localStorage.getItem("user");
 let friends = JSON.parse(localStorage.getItem("friends")) || [];
