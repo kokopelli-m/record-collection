@@ -22,6 +22,10 @@ function saveFavorites() {
     localStorage.setItem("favorites", JSON.stringify(favorites));
 }
 
+function showFavorites() {
+    const favRecords = records.filter((_, i) => favorites.includes(i));
+    displayRecords(favRecords);
+}
 function displayRecords(data) {
     const list = document.getElementById("record-list");
     list.innerHTML = "";
