@@ -1,4 +1,4 @@
-# 🎵 Record Collection
+# 🎵 Record Collection! 
 
 A simple website to showcase my vinyl record collection.
 
