@@ -9,5 +9,5 @@ A simple website to showcase my vinyl record collection.
 
 ## Future Improvements
 - Search functionality
-- Filtering (by year, artist)
+- Filtering (by year, by artist)
 - Add new records (admin panel)
